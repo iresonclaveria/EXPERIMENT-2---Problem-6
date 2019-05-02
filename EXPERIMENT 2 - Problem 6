@@ -1,0 +1,23 @@
+#include <conio.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int Other_Number, Number_1 = 0, Number_2 = 1;
+
+    cout<<Number_1<<","<<Number_2<<",";
+    for (int i = 3; i<=22; i++)
+    {
+        Other_Number = Number_1 + Number_2;
+        Number_1 = Number_2;
+        Number_2 = Other_Number;
+        cout<<Other_Number;
+        
+        if (i < 22)
+        {
+            cout<<",";
+        }
+    }
+_getch();
+return 0;
+}
